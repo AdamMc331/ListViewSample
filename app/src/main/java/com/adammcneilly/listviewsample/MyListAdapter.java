@@ -62,4 +62,9 @@ public class MyListAdapter extends BaseAdapter{
         // Return the row view.
         return view;
     }
+
+    public void swapData(String[][] data) {
+        this.mData = data;
+        notifyDataSetChanged();
+    }
 }
